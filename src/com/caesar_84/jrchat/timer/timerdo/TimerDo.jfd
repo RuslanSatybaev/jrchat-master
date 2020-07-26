@@ -1,0 +1,57 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.7" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :p:21:p, par l {comp scrollPane1::::359:x, comp textField1::::359:x}, space :::p, par l {comp button1:::p::p, seq {comp btnStart:::p::p, space s:::p, comp btnStop:::p::p}, comp scrollPane2:::p:191:p, seq l {space :p:26:p, comp timerName:::p::p, space s:::p, comp timeLeft:::p::p}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, par l {seq {comp scrollPane2:::p:268:p, space :::p, par b {comp timeLeft::b:p::p, comp timerName::b:p::p}, space u:::p, par b {comp btnStart::b:p::p, comp btnStop::b:p::p}, space :p:12:p}, seq {comp scrollPane1:::::x, space :::p}}, par l {comp button1:::p::p, comp textField1:::p:42:p}, space ::25:x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "timerName"
+				"font": new java.awt.Font( "Tahoma", 0, 18 )
+				"text": "Timer : "
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "timeLeft"
+				"font": new java.awt.Font( "Tahoma", 1, 12 )
+				"text": "00:00"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnStop"
+				"text": "Stop"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnStopMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnStart"
+				"text": "Start"
+				"actionCommand": "Start"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnStartMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Send"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea2"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 585, 455 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

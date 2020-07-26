@@ -1,0 +1,75 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.7" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::p, par l {comp scrollPane1::::192:x, comp textField1::::192:x}, par l {seq {par l {seq l {space :p:41:p, comp label1:::p:80:p}, seq l {space :::p, par l:::p {seq {comp button1:::p::p, space :::p, comp button2:::p::p}, seq l {comp button3:::p::p, space :::p, comp button4:::p::p}, comp button5::l:::x}}}, space :p:23:p}, seq t {space :::p, par l {seq t {comp label5:::p::p, space u:::p, comp label2:::p::p, space u:::p, comp label6:::p::p, space :p:12:p, comp label3:::p:9:p, space :::p, comp label4:::p::p, space :p:72:p}, comp scrollPane2::t:p:186:p}}}}}"
+			"$verticalGroup": "par l {seq {par l {comp scrollPane1:::::x, seq {comp scrollPane2:::p:128:p, space s:::p, comp label1:::p::p, space :p:12:p, par b {comp label4::b:p::p, comp label6::b:p::p, comp label2::b:p:29:p, comp label5::b:p::p, comp label3::b:p::p}, space ::26:x, par b {comp button1::b:p::p, comp button2::b:p::p}}}, space s:::p, par l:::p {seq {par b {comp button3::b:p::p, comp button4::b:p::p}, space :::p, comp button5:::p::p}, comp textField1:::::x}, space :0:2:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea2"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "       Timer"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": ":"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Start"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Stop"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "Send"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "Connect"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"text": "Dicconnect"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": ":"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "00"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "00"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "00"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 390, 345 )
+		} )
+	}
+}
